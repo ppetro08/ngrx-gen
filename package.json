@@ -1,9 +1,9 @@
 {
-  "name": "base-sample",
-  "displayName": "base-sample",
-  "description": "Base sample for other samples at Microsoft/vscode-extension-samples",
+  "name": "ngrx-gen",
+  "displayName": "ngrx-gen",
+  "description": "ngrx-gen",
   "version": "0.0.1",
-  "publisher": "vscode-samples",
+  "publisher": "ngrx-gen",
   "engines": {
     "vscode": "^1.32.0"
   },
