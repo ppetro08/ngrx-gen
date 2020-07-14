@@ -2,7 +2,7 @@
   "name": "ngrx-gen",
   "displayName": "ngrx-gen",
   "description": "ngrx-gen",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "publisher": "ngrx-gen",
   "engines": {
     "vscode": "^1.32.0"

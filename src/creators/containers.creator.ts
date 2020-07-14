@@ -64,8 +64,8 @@ import { ${ModelFileName(
 )} } from '../models/${this._name}';
 
 @Component({
-  selector: '${this._name}',
-  templateUrl: '${this._name}.component.html',
+  selector: 'qmg-${this._name}',
+  templateUrl: './${this._name}.component.html',
 })
 export class ${this._namePascalCase}Component implements OnInit {
   data: Observable<${this._namePascalCase} | null>;

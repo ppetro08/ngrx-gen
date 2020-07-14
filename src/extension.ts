@@ -1,3 +1,5 @@
+// reconcile files
+
 import * as vscode from "vscode";
 import * as fs from "fs";
 import {
@@ -73,12 +75,12 @@ function createFolder(path: string, name: string) {
 
 function createIndexFile(path: string, name: string) {
   const contents = `
-	  export * from './containers/${ContainerFileName(name)}'
-	  export * from './models/${name}'
-	  export * from './state/${StateActionsFileName(name)}'
-    export * from './state/${StateEffectsFileName(name)}'
-    export * from './state/${StateReducerFileName(name)}'
-    export * from './state/${StateSelectorsFileName(name)}'
+export * from './containers/${ContainerFileName(name)}';
+export * from './models/${name}';
+export * from './state/${StateActionsFileName(name)}';
+export * from './state/${StateEffectsFileName(name)}';
+export * from './state/${StateReducerFileName(name)}';
+export * from './state/${StateSelectorsFileName(name)}';
 	`;
   fs.writeFile(`${path}/index.ts`, contents, (err) => {
     if (err) {

@@ -54,8 +54,8 @@ import { ${ModelFileName(this._namePascalCase)} } from '../models/${
     }';
 
 @Component({
-  selector: '${this._name}',
-  templateUrl: '${this._name}.component.html',
+  selector: 'qmg-${this._name}-view',
+  templateUrl: './${this._name}-view.component.html',
 })
 export class ${this._namePascalCase}ViewComponent implements OnInit {
   @Input() data: ${ModelFileName(this._namePascalCase)} | null;

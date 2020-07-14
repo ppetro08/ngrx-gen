@@ -34,6 +34,8 @@ export class ModulesCreator {
 import { NgModule } from '@angular/core';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
+import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { ${this._namePascalCase}Effects } from './state/${this._name}.effects';
 import { reducer, ${this._nameCamelCase}FeatureKey } from './state/${
@@ -48,6 +50,9 @@ import { ${this._namePascalCase}ViewComponent } from './views/${ViewFileName(
 
 @NgModule({
   imports: [
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
     StoreModule.forFeature(${this._nameCamelCase}FeatureKey, reducer),
     EffectsModule.forFeature([${this._namePascalCase}Effects]),
   ],
